@@ -26,7 +26,7 @@
             "nrqlQueries": [
               {
                 "accountIds": [
-                  <accountid>
+                  3217974
                 ],
                 "query": "FROM GHWorkFlowJobsEvent SELECT percentage(count(*), WHERE conclusion = 'success' AND job.name != 'nri-flex') AS 'Deployment Frequency' SINCE 30 days ago"
               }
@@ -55,7 +55,7 @@
             "nrqlQueries": [
               {
                 "accountIds": [
-                  <accountid>
+                  3217974
                 ],
                 "query": "FROM GHWorkFlowJobsEvent SELECT percentage(count(*), WHERE conclusion != 'success' AND  job.name != 'nri-flex' ) AS 'Change Failure Rate' SINCE 30 days ago"
               }
@@ -84,7 +84,7 @@
             "nrqlQueries": [
               {
                 "accountIds": [
-                  <accountid>
+                  3217974
                 ],
                 "query": "FROM GHWorkFlowDuration SELECT average(duration_ms / 1000) as 'Lead Time to Change' SINCE 30 day ago"
               }
@@ -113,7 +113,7 @@
             "nrqlQueries": [
               {
                 "accountIds": [
-                  <accountid>
+                  3217974
                 ],
                 "query": "FROM GHWorkFlowCommitsEvent SELECT latest(timestamp) AS 'Last Commit' WHERE status = completed LIMIT 1 SINCE 30 days ago"
               }
@@ -142,7 +142,7 @@
             "nrqlQueries": [
               {
                 "accountIds": [
-                  <accountid>
+                  3217974
                 ],
                 "query": "FROM Deployment SELECT count(*) SINCE 30 days ago"
               }
