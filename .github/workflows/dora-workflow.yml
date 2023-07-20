@@ -39,4 +39,4 @@ jobs:
           region: "US"
           guid: ${{ secrets.NEW_RELIC_DEPLOYMENT_ENTITY_GUID }}
           version: 1.0
-          user: "${{ github.actor }}"          
+          user: "${{ github.actor }}"       
