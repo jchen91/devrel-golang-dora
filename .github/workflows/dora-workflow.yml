@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     name: New Relic
     steps:
-      # This step builds a var with the release tag value to use later
+      # This step builds a var with the release tag value to use later 
       - name: New Relic Application Deployment Marker
         uses: newrelic/deployment-marker-action@v2.2.0
         with:
